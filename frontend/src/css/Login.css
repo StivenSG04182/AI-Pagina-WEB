@@ -1,0 +1,146 @@
+/* Estilos generales del cuerpo */
+* {
+    user-select: none; /* Evita la selección de texto */
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Fuente predeterminada */
+    height: 100vh; /* Altura de la pantalla completa */
+    width: 100%;
+    overflow: hidden; /* Evita el desplazamiento de la página */
+    display: flex;
+}
+
+canvas {
+    width: 80%;
+    height: 100%;
+}
+
+.login__container {
+    width: 50%; /* Ocupa la otra mitad del ancho de la pantalla */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: center; /* Centra horizontalmente el contenido */
+    background:linear-gradient(#ffffff,#c8c8c8,#a4a4a4,#8c8c8c,#696969); /* Fondo blanco grisáceo */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Estilo del título principal */
+h1 {
+    color: #00fdf7; /* Color de texto turquesa */
+    font-size: 96px; /* Tamaño de fuente grande */
+    margin-bottom: 20px; /* Espacio inferior */
+    height: 178px;
+    width: 430px;
+    font-style:'Italiana',sans-serif
+}
+
+/* Estilos para las etiquetas del formulario */
+label {
+    width: 83%;
+    color: #333; /* Color del texto oscuro */
+    font-weight: bold; /* Texto en negrita */
+    margin-top: 10px; /* Espacio superior */
+    display: block; /* Se muestra como un bloque separado */
+}
+
+.login__checkbox {
+    margin-bottom: 20px;
+}
+
+/* Estilos para los campos de entrada */
+input[type="email"],
+input[type="password"] {
+    width: 80%; /* Ancho del 80% del contenedor padre */
+    padding: 10px; /* Espaciado interno */
+    margin: 5px 0 10px; /* Espacio superior e inferior */
+    border: 2px solid #000000; /* Borde gris claro */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño de fuente estándar */
+}
+
+/* Estilo del botón de envío */
+button[type="submit"] {
+    width: 80%; /* Ancho del 80% del contenedor padre */
+    padding: 10px; /* Espaciado interno */
+    background-color: #29a3a3; /* Color de fondo turquesa */
+    color: #fff; /* Color del texto blanco */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1.2rem; /* Tamaño de fuente más grande */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+    margin-bottom: 20px; /* Espacio inferior */
+    border:2px solid#000000;
+}
+
+/* Efecto hover para el botón */
+button[type="submit"]:hover {
+    background-color: #238585; /* Cambia el color de fondo al pasar el mouse */
+}
+
+/* Estilos para el texto adicional */
+.login__text {
+    color: #333; /* Color del texto oscuro */
+    font-size: 1rem; /* Tamaño de fuente estándar */
+    margin-top: 20px; /* Espacio superior */
+    text-align: center; /* Texto centrado */
+}
+
+.login__text-link {
+    color: #00fdf7;
+    font-family: 'Italiana', sans-serif;
+}
+
+/* Contenedor de los botones de redes sociales */
+.buttons-container {
+    display: flex; /* Utiliza flexbox para organizar los botones */
+    justify-content: space-around; /* Espaciado igual entre los botones */
+    width: 80%; /* Ancho del 80% del contenedor padre */
+    margin-top: 20px; /* Espacio superior */
+}
+
+/* Estilo de las imágenes dentro de los botones */
+.btn img {
+    width: 40px; /* Ancho de las imágenes */
+    height: 40px; /* Altura de las imágenes */
+    cursor: pointer; /* Cambia el cursor al pasar por encima */
+}
+
+/* Estilos adicionales para iconos personalizados */
+.icon {
+    font-family: 'iconfont';
+    font-size: 130%;
+    float: right;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    src: url('iconfont.ttf') format('truetype'); /* Define una fuente personalizada */
+}
+
+/* Estilos para la tipografía grande */
+.bigFont {
+    font-size: 150%;
+    color: #8C8C8C;
+}
+
+/* Estilos para la función específica */
+.cr.function.appBigFont {
+    font-size: 150%;
+    line-height: 27px;
+    color: #A5F8D3;
+    background-color: #023C40;
+}
+
+.cr.function.appBigFont .property-name {
+    float: none;
+}
+
+.cr.function.appBigFont .icon {
+    position: sticky;
+    bottom: 27px;
+}
+
